@@ -1,11 +1,10 @@
-import os, sys, joblib, pandas as pd
+# api/predict_helper.py
+import os, joblib, pandas as pd
 from typing import List
 
-# Make sure we can import your Colab modules
-sys.path.append('/content')
-
-from windai_preprocess import build_features_infer, load_feature_columns, clean_and_parse
-from windai_recommend import recommend_assemblies_from_predictions
+# ✅ import the modules you just added to this repo
+from .preprocess import build_features_infer, load_feature_columns, clean_and_parse
+from .recommend import recommend_assemblies_from_predictions
 
 MODEL_DIR = os.environ.get("MODEL_DIR", os.path.join(os.path.dirname(__file__), "..", "model"))
 
@@ -34,3 +33,4 @@ def recommend(df_raw: pd.DataFrame,
         tolerance=tolerance,
         top_n=top_n
     )
+
