@@ -1,0 +1,97 @@
+{
+  "options": {
+    "Glazing Name": [
+      "Clear Float Glass (4 mm) + Low-E Glass (Soft-coat, 4 mm)",
+      "Clear Float Glass (4\u00a0mm)",
+      "Clear Float Glass (4\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Clear Float Glass (6\u00a0mm)",
+      "Clear Float Glass (6\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Clear Float Glass (6\u00a0mm) + Low-E Glass (Soft-coat, 4\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Clear Glass",
+      "Hard Coat Low-E Glass",
+      "Laminated Acoustic Glass (10.8 mm) + Low-E Glass (Soft-coat, 4 mm) + Clear Float Glass (4 mm)",
+      "Laminated Acoustic Glass (10.8\u00a0mm) + Clear Float (6\u00a0mm)",
+      "Laminated Acoustic Glass (10.8\u00a0mm) + Low-E Glass (Soft-coat, 4\u00a0mm) + Clear Float (4\u00a0mm)",
+      "Laminated Safety Glass (6.4 mm) + Low-E Glass (Soft-coat, 4 mm)",
+      "Laminated Safety Glass (8.8\u00a0mm) + Laminated Safety Glass (6.4\u00a0mm)",
+      "Low-E Glass (Hard-coat, 4 mm) + Clear Float Glass (4 mm)",
+      "Low-E Glass (Hard-coat, 4 mm) + Low-E Glass (Soft-coat, 4 mm)",
+      "Low-E Glass (Hard-coat, 4\u00a0mm)",
+      "Low-E Glass (Hard-coat, 4\u00a0mm) + Clear Float (4\u00a0mm) + Clear Float (4\u00a0mm)",
+      "Low-E Glass (Hard-coat, 4\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4 mm) (2\u00d7) + Clear Float Glass (4 mm)",
+      "Low-E Glass (Soft-coat, 4 mm) (2\u00d7) + Low-E Glass (Hard-coat, 4 mm)",
+      "Low-E Glass (Soft-coat, 4 mm) + Clear Float Glass (4 mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) (2\u00d7) + Clear Float (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) (2\u00d7) + Clear Float Glass (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) (3\u00d7) + Clear Float (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) + Clear Float + Clear Float (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Low-E Glass (Soft-coat, 4\u00a0mm) + Clear Float Glass (4\u00a0mm) (slim IGU)",
+      "Soft Coat Low-E Glass",
+      "Tinted Glass (Bronze, 4 mm) + Low-E Glass (Soft-coat, 4 mm)",
+      "Tinted Glass (Bronze, 4 mm) + Low-E Glass (Soft-coat, 4 mm) (2\u00d7)",
+      "Tinted Glass (Bronze, 4\u00a0mm)",
+      "Tinted Glass (Bronze, 4\u00a0mm) + Clear Float Glass (4\u00a0mm)",
+      "Tinted Glass (Bronze, 4\u00a0mm) + Low-E Glass (Soft-coat, 4\u00a0mm)",
+      "Vacuum Insulated Glazing (VIG) Panel",
+      "Vacuum Insulated Glazing (VIG) Panel + Clear Float Glass (4 mm)",
+      "Vacuum Insulated Glazing (VIG) Panel + Laminated Safety Glass (6.4 mm)"
+    ],
+    "Gas Fill Name": [
+      "Air",
+      "Argon",
+      "Krypton",
+      "Vacuum",
+      "Xenon"
+    ],
+    "Spacer Name": [
+      "Aluminum",
+      "Composite (Fiberglass/Polymer)",
+      "Foam Spacer",
+      "None",
+      "Silicone Foam",
+      "Stainless Steel",
+      "Thermoplastic (TPS)",
+      "Thermoplastic Spacer",
+      "Warm-Edge (Hybrid Polymer)",
+      "uPVC Foam"
+    ],
+    "Sealant Name": [
+      "Butyl Sealant",
+      "Polysulfide Sealant",
+      "Polyurethane Sealant",
+      "Silicone Sealant",
+      "Warm-edge Silicone"
+    ],
+    "Frame Name": [
+      "Aluminum",
+      "Aluminum-Clad Wood",
+      "Aluminum-Clad uPVC",
+      "Fiberglass",
+      "PVC",
+      "Wood",
+      "uPVC"
+    ],
+    "Thermal Break Name": [
+      "Aerogel Thermal Break",
+      "Aerogel-Insulated",
+      "None",
+      "PU Foam Thermal Break",
+      "Polyamide 6.6 GF",
+      "Polyamide Thermal Break",
+      "uPVC Foam"
+    ]
+  },
+  "defaults": {
+    "Glazing Thickness (mm)": 8.0,
+    "Gas \u03bb (W/m\u00b7K)": 0.016,
+    "Spacer \u03bb (W/m\u00b7K)": 0.2,
+    "Spacer Width (mm)": 12.0,
+    "Sealant \u03bb (W/m\u00b7K)": 0.33,
+    "Frame \u03bb (W/m\u00b7K)": 0.17,
+    "Frame Thickness (mm)": 70.0,
+    "Thermal Break \u03bb (W/m\u00b7K)": -1.0
+  }
+}
