@@ -33,4 +33,47 @@ def recommend(df_raw: pd.DataFrame,
         tolerance=tolerance,
         top_n=top_n
     )
+def derive_schema(feature_columns):
+    """
+    Build a simple schema for the UI:
+    - categorical options (extracted from one-hot columns)
+    - numeric fields the API accepts
+    """
+    numeric_required = [
+        "Glazing λ (W/m·K)",
+        "Glazing Thickness (mm)",
+        "Gas λ (W/m·K)",
+        "Spacer λ (W/m·K)",
+        "Spacer Width (mm)",
+        "Sealant λ (W/m·K)",
+        "Frame λ (W/m·K)",
+        "Frame Thickness (mm)",
+        "Thermal Break λ (W/m·K)",
+    ]
+
+    cats = ["Glazing Name", "Gas Fill Name", "Spacer Name",
+            "Sealant Name", "Frame Name", "Thermal Break Name"]
+    opts = {c: [] for c in cats}
+
+    for col in feature_columns:
+        for c in cats:
+            prefix = f"{c}_"
+            if col.startswith(prefix):
+                opts[c].append(col[len(prefix):])
+
+    # Make sure “None” appears for spacer/thermal break
+    for c in ["Spacer Name", "Thermal Break Name"]:
+        if "None" not in opts[c]:
+            opts[c].append("None")
+
+    for c in cats:
+        opts[c] = sorted(set(opts[c]))
+
+    return {
+        "categorical": opts,
+        "numeric_required": numeric_required,
+        "notes": "Send one or more rows to /recommend/json or /predict/json. "
+                 "Omit spacer/thermal-break numeric fields when Name is 'None'."
+    }
+
 
